@@ -1,0 +1,304 @@
+/* General Styles */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    font-family: 'Poppins', sans-serif;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #ffc1cc, #cce7ff); /* Subtle pink to blue gradient */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Title and Heading */
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Container for form and buttons */
+.container {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-container {
+    margin-bottom: 20px;
+}
+
+.input-container input {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    outline: none;
+    margin-bottom: 10px;
+}
+
+.input-container input:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Buttons Styling */
+.btn {
+    padding: 12px 24px;
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+    border-radius: 50px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+    text-align: center;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background-color: black;
+    color: white;
+    border: 2px solid white;
+}
+
+.btn-container {
+    margin-top: 20px;
+}
+
+.btn-container a {
+    text-decoration: none;
+    font-size: 1rem;
+    color: #484848;
+}
+
+.btn-container a:hover {
+    text-decoration: underline;
+}
+
+
+
+/* Welcome page button container */
+.welcome-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100vh; /* Ensure full height for centering */
+    width: 100%; /* Ensure the container takes full width */
+}
+
+/* SignUp and Login buttons on the Welcome page */
+.welcome-container .btn {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+    border-radius: 50px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: all 0.3s ease;
+    width: auto; /* Ensure buttons aren't stretched */
+}
+
+/* Hover effect for Welcome Page buttons */
+.welcome-container .btn:hover {
+    background-color: black;
+    color: white;
+    border: 2px solid white;
+}
+
+/* Ensure the buttons are centered and spaced */
+.welcome-container .btn-container {
+    display: flex;
+    justify-content: center; /* Center buttons horizontally */
+    gap: 20px; /* Space between the buttons */
+    width: 100%; /* Ensure the container takes full width */
+    margin-top: 20px;
+}
+
+/* Login and sign up container styles */
+.login-container {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
+    padding: 40px;
+    width: 100%;
+    max-width: 400px;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    font-size: 1rem;
+    color: #333;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    outline: none;
+}
+
+.input-group input:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Style for links between pages (Login/SignUp) */
+.signup-link {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 1rem;
+    color: #484848; /* Adjust the color to match your design */
+}
+
+.signup-link a {
+    color: #007bff; /* You can use your primary color */
+    text-decoration: none;
+}
+
+.signup-link a:hover {
+    text-decoration: underline;
+}
+
+
+.login-link {
+    color: blue;
+    text-decoration: none;
+}
+
+.login-link:hover {
+    text-decoration: underline;
+}
+
+/* General Pomodoro Timer Styles */
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #ffc1cc, #cce7ff); /* Subtle gradient background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+}
+
+.timer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+#timerDisplay {
+    font-size: 4rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Controls */
+.controls {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-top: 20px;
+}
+button {
+    padding: 12px 24px; /* Adjust padding to provide space inside the button */
+    background-color: #a2c8f0; /* Pastel Blue */
+    color: #3b5b8d; /* Muted Navy Blue */
+    border: 2px solid #3b5b8d; /* Muted Navy Blue */
+    border-radius: 50px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    width: auto; /* Allow width to adjust based on content */
+    min-width: 120px; /* Optional: Ensure buttons are at least a certain width */
+    text-align: center; /* Center text inside the button */
+}
+
+button:hover {
+    background-color: #3b5b8d; /* Muted Navy Blue */
+    color: white;
+    border-color: #a2c8f0; /* Pastel Blue */
+}
+
+button:focus {
+    outline: none;
+}
+
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .container {
+        padding: 20px;
+    }
+
+    #timerDisplay {
+        font-size: 3rem;
+    }
+
+    .controls {
+        flex-direction: column;
+    }
+
+    button {
+        width: 80%;
+        margin-bottom: 10px;
+    }
+}

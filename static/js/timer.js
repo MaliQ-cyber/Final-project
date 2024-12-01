@@ -30,7 +30,7 @@ function updateDisplay() {
 
 function resetTimer() {
     clearInterval(timer);
-    timeLeft = 10; // Reset time to 10 seconds for testing
+    timeLeft = 25 * 60; // Reset time to 10 seconds for testing
     updateDisplay();
 }
 

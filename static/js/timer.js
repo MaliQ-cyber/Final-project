@@ -30,8 +30,7 @@ function updateDisplay() {
 
 function resetTimer() {
     clearInterval(timer);
-    timeLeft = 25 * 60; // Reset time to 10 seconds for testing
-    updateDisplay();
+    timeLeft = 25 * 60; 
 }
 
 startButton.addEventListener('click', function () {

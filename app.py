@@ -1,5 +1,6 @@
 from flask import Flask, render_template, request, redirect, url_for
 from flask_sqlalchemy import SQLAlchemy
+from flask import send_from_directory
 
 # Initialize Flask app
 app = Flask(__name__)
@@ -28,6 +29,12 @@ with app.app_context():
 @app.route('/')
 def index():
     return render_template('index.html')
+
+from flask import send_from_directory
+
+@app.route('/<path:filename>')
+def static_files(filename):
+    return send_from_directory('.', filename)
 
 @app.route('/login', methods=['GET', 'POST'])
 def login():
